@@ -28,7 +28,8 @@ jobs:
         env:
           TMDB_SECRET: ${{ secrets.TMDB_SECRET }}
           TRAKT_SECRET: ${{ secrets.TRAKT_SECRET }} 
-          UN_SECRET: ${{ secrets.UN_SECRET }} 
+          UN_SECRET: ${{ secrets.UN_SECRET }}
+          MOVIE_SECRET: ${{ secrets.MOVIE_SECRET }} 
         run: |
           pip install -r requirements.txt
           python script.py
