@@ -3,9 +3,9 @@ import random
 import os
 
 # Configuration & Paths
-trakt_key = os.environ.get['TRAKT_SECRET']
-tmdb_key = os.environ.get['TMDB_SECRET']
-username = os.environ.get['UN_SECRET']
+trakt_key = os.environ['TRAKT_SECRET']
+tmdb_key = os.environ['TMDB_SECRET']
+username = os.environ['UN_SECRET']
 
 headers = {
     'Content-Type': 'application/json',
