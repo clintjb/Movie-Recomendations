@@ -114,12 +114,12 @@ def main():
     add_image_urls_to_movies(random_available)
     add_image_urls_to_movies(random_non_available)
 
-    html = """<html><head><link rel="stylesheet" href="./style.css"></head><body><main>"""
+    html = """<html><head><link rel="stylesheet" href="./recomendations.css"></head><body><main>"""
     html += ''.join([generate_html(movie, "AVAILABLE", "#068FFF") for movie in random_available])
     html += ''.join([generate_html(movie, "REQUEST", "#0c101a") for movie in random_non_available])
     html += "</main></body></html>"
 
-    with open("recommendation2.html", "w") as file:
+    with open("recommendations.html", "w") as file:
         file.write(html)
 
 if __name__ == '__main__':
