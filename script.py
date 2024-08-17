@@ -14,7 +14,7 @@ headers = {
 }
 
 cover_base_image_url = 'https://image.tmdb.org/t/p/w500'
-collection_url = f'https://api.trakt.tv/users/{username}/collection/movies'
+collection_url = f'https://api.trakt.tv/users/{SECRET_3}/collection/movies'
 recommendations_url = 'https://api.trakt.tv/lists/28498128/items/movies?extended=full'
 
 def fetch_trakt_data(url):
@@ -45,7 +45,7 @@ def get_recommendations():
     ]
 
 def get_movie_image_url(tmdb_id):
-    url = f'https://api.themoviedb.org/3/movie/{tmdb_id}?api_key={tmdb_key}'
+    url = f'https://api.themoviedb.org/3/movie/{tmdb_id}?api_key={SECRET_2}'
     response = requests.get(url)
     if response.status_code == 200:
         poster_path = response.json().get('poster_path')
