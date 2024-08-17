@@ -26,9 +26,9 @@ jobs:
 
       - name: Running Scripts
         env:
-          TMDB_SECRET: ${{ secrets.TMDB_SECRET }}
-          TRAKT_SECRET: ${{ secrets.TRAKT_SECRET }} 
-          UN_SECRET: ${{ secrets.UN_SECRET }} 
+          ENV_SECRET: ${{ secrets.TMDB_SECRET }}
+          ENV_SECRET: ${{ secrets.TRAKT_SECRET }} 
+          ENV_SECRET: ${{ secrets.UN_SECRET }} 
         run: |
           pip install -r requirements.txt
           python script.py
