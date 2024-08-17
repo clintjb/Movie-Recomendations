@@ -16,7 +16,7 @@ headers = {
 
 cover_base_image_url = 'https://image.tmdb.org/t/p/w500'
 collection_url = f'https://api.trakt.tv/users/{SECRET_3}/collection/movies'
-recommendations_url = 'https://api.trakt.tv/lists/{SECRET_4}/items/movies?extended=full'
+recommendations_url = f'https://api.trakt.tv/lists/{SECRET_4}/items/movies?extended=full'
 
 def fetch_trakt_data(url):
     response = requests.get(url, headers = headers)
