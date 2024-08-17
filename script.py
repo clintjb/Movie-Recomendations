@@ -3,14 +3,14 @@ import random
 import os
 
 # Configuration & Paths
-SECRET = os.environ['TRAKT_SECRET']
-tmdb_key = os.environ['TMDB_SECRET']
-username = os.environ['UN_SECRET']
+SECRET_1 = os.environ['TRAKT_SECRET']
+SECRET_2 = os.environ['TMDB_SECRET']
+SECRET_3 = os.environ['UN_SECRET']
 
 headers = {
     'Content-Type': 'application/json',
     'trakt-api-version': '2',
-    'trakt-api-key': trakt_key
+    'trakt-api-key': SECRET_1
 }
 
 cover_base_image_url = 'https://image.tmdb.org/t/p/w500'
