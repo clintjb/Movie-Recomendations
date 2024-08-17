@@ -2,7 +2,7 @@ name: Automatic Movie Recommendations Trigger
 
 on:
   schedule:
-    - cron: "0 7 * * Tue"
+    - cron: "0 0 */3 * *"
 
 jobs:
   build:
