@@ -6,6 +6,7 @@ import os
 SECRET_1 = os.environ['TRAKT_SECRET']
 SECRET_2 = os.environ['TMDB_SECRET']
 SECRET_3 = os.environ['UN_SECRET']
+SECRET_4 = os.environ['MOVIE_SECRET']
 
 headers = {
     'Content-Type': 'application/json',
@@ -15,7 +16,7 @@ headers = {
 
 cover_base_image_url = 'https://image.tmdb.org/t/p/w500'
 collection_url = f'https://api.trakt.tv/users/{SECRET_3}/collection/movies'
-recommendations_url = 'https://api.trakt.tv/lists/28498128/items/movies?extended=full'
+recommendations_url = 'https://api.trakt.tv/lists/{SECRET_4}/items/movies?extended=full'
 
 def fetch_trakt_data(url):
     response = requests.get(url, headers = headers)
