@@ -3,7 +3,7 @@ import random
 import os
 
 # Configuration & Paths
-trakt_key = os.environ['TRAKT_SECRET']
+SECRET = os.environ['TRAKT_SECRET']
 tmdb_key = os.environ['TMDB_SECRET']
 username = os.environ['UN_SECRET']
 
